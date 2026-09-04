@@ -10,6 +10,4 @@ fun main() {
     val exercicio18 = Exercicio18()
     val exercicio19 = Exercicio19()
     val exercicio20 = Exercicio20()
-
-    println(exercicio17.exibirDados())
 }
