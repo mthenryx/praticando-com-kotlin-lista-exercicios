@@ -10,4 +10,9 @@ fun main() {
     val exercicio18 = Exercicio18()
     val exercicio19 = Exercicio19()
     val exercicio20 = Exercicio20()
+
+    exercicio19.depositar(80.0)
+    exercicio19.sacar(100.0)
+    exercicio19.sacar(50.0)
+    exercicio19.exibirSaldo()
 }

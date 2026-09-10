@@ -15,21 +15,15 @@ class ContaBancaria {
     }
 
     fun sacarValor(sacar: Double) {
-        var result: Double = 0.0
-
-        if (sacar > 0) {
-            result = sacar
-        } else {
-            result = sacar * 2
-        }
 
         if (saldo <= 0) {
             println("$nomeTitular você está zerado")
         } else if (sacar > saldo) {
             println("$nomeTitular não é possível sacar um valor superior que você tem na conta")
         } else {
-            saldo = saldo - result
-            println("$nomeTitular você sacou $result e o valor atual da sua conta é $saldo")
+            saldo = saldo - sacar
+
+            println("$nomeTitular você sacou $sacar e o valor atual da sua conta é $saldo")
         }
     }
 
